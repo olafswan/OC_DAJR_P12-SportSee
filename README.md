@@ -1,4 +1,4 @@
-#### Projet 11 de la formation "Développeur d'application - JavaScript React" par OpenClassrooms
+#### Projet 12 de la formation "Développeur d'application - JavaScript React" par OpenClassrooms
 
 # Développez un tableau de bord d'analytics avec React
 
