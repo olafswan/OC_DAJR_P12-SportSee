@@ -4,3 +4,43 @@
 * {
     @include reset;
   }
+
+header {
+  background-color: $sec-color;
+  color: $ter-color;
+  @include flex(h, sb, c);
+}
+
+.header__menu {
+  width: 100%;
+  @include flex(h, sa, c);
+}
+
+.main {
+  @include flex(h, sb, s);
+}
+
+.side-bar {
+  @include flex(v, sa, c);
+  background-color: $sec-color;
+  color: $ter-color;
+  height: 90vh;
+  // TODO fix height
+}
+
+.activities-container {
+  @include flex(v, sb, c);
+  // gap: 1rem;
+}
+
+.activity {
+  background-color: #fff;
+  padding: .5rem;
+  border-radius: .25rem;
+  margin: 1rem;
+}
+
+main {
+  width: 100%;
+  margin: 3rem;
+}
