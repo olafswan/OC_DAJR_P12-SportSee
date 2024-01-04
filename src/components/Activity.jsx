@@ -1,16 +1,8 @@
-export default function Activity({activity}) {
+export default function Activity(prop) {
 
     return (
-        <div className="activity">
-  
-        
-  
-          {/* <img src=`../assets/${activity}` alt="activity" /> */}
-          <img src="../assets/swim.svg" alt={activity} />
-            {/* TODO ask about path link  */}
-  
-  
-        </div>
+      <div className="activity">
+        <img src={`src/assets/${prop.activity}.svg`} alt={prop.activity} />
+      </div>
     );
   }
-  
