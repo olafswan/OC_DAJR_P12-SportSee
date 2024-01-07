@@ -5,7 +5,44 @@
     @include reset;
   }
 
+  a {
+    text-decoration: none;
+    color: inherit
+  }
+// ### LOGIN PAGE ###
+
+html, body, #root {
+  height: 100%;
+}
+
+.login__nav {
+  height: calc(100% - $header-height);
+  @include flex(h, se, c);
+  img {
+    @include card;
+    width: 150px;
+  }
+  .login__link {
+    margin: 3rem;
+    &:hover {
+      transform: scale(1.025);
+    }
+  }
+}
+
+.login__user {
+  color: $prim-color;
+  text-align: center;
+  margin-top: .5rem;
+  font-weight: 500;
+}
+
+
+
+// ### PROFILE PAGE ###
+
 header {
+  height: $header-height;
   background-color: $sec-color;
   color: $ter-color;
   @include flex(h, sb, c);
