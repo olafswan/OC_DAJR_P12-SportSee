@@ -1,29 +1,46 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import { RouterProvider, Outlet, createBrowserRouter } from "react-router-dom";
 import './styles/css/style.css'
 import Header from "./components/Header.jsx";
 import SideBar from "./components/SideBar.jsx";
+import Login from "./components/Login.jsx";
+import Profile from "./components/Profile.jsx";
+import ErrorPage from "./components/ErrorPage.jsx";
 
 
-function App() {
-  const [count, setCount] = useState(0)
+// rooting
+const router = createBrowserRouter([
+  {
+    path : '/',
+    element: <Login/>,
+    errorElement: <ErrorPage/>,
+  },
+  {
+    path: 'profile/:id',
+    element: <Root/>,
+    children: [
+      {
+        index: true,
+        element: <Profile/>,
+      },
+    ]
+  },
+])
 
-  return (
-    <>
-      <Header/>
-      <div className="main">
-        <SideBar/>
-        <main>
-          <h1>Bonjour Thomas
-          </h1>
-        </main>
-      </div>
 
-    
-     
-    </>
-  )
+// layout
+function Root () {
+  return <>
+    <Header/>
+    <div className="main">
+      <SideBar/>
+      <Outlet/>
+    </div>
+  </>
 }
 
-export default App
+function App() {
+  return <RouterProvider router={router}/>
+}
+
+export default App;
+
