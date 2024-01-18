@@ -59,6 +59,10 @@ header {
   align-items: center;
 }
 
+.header__logo-container {
+  margin: 1rem;
+}
+
 .header__menu {
   width: 100%;
   display: flex;
@@ -81,7 +85,7 @@ header {
   align-items: center;
   background-color: #000000;
   color: #ffffff;
-  height: 90vh;
+  height: calc(100vh - 90px);
 }
 
 .activities-container {
@@ -101,4 +105,12 @@ header {
 main {
   width: 100%;
   margin: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+h1 .firstName {
+  color: #FF0101;
 }/*# sourceMappingURL=style.css.map */
