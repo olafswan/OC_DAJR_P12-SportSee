@@ -9,7 +9,14 @@ export default function SideBar() {
       <div className="side-bar">
 
         <div className="activities-container">
-         {activitiesList.map(activity => (<Activity activity={activity} key={activity}/>))}
+         {activitiesList.map(activity => (<>
+         <Activity activity={activity} key={activity}/>
+         
+         <p>{activity}</p>
+         </>
+         )
+         
+         )}
 
         </div>
 
