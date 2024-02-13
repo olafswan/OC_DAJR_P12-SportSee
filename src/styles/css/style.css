@@ -19,7 +19,9 @@ a {
   color: inherit;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 
@@ -105,6 +107,7 @@ header {
 main {
   width: 100%;
   margin: 3rem;
+  height: 100%;
 }
 
 h1 {
@@ -112,5 +115,79 @@ h1 {
   font-weight: 500;
 }
 h1 .firstName {
-  color: #FF0101;
+  color: #ff0101;
+}
+
+.chartContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.chart {
+  overflow: hidden;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.key-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%;
+  padding: 1rem;
+}
+
+.data-container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.data-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+}
+
+.data-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.data-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.bottomSide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.bottomChart {
+  width: 33%;
+  border: 1px solid tomato;
 }/*# sourceMappingURL=style.css.map */

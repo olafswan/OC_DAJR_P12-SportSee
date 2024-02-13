@@ -2,16 +2,18 @@
 @import "../utils/mixins";
 
 * {
-    @include reset;
-  }
+  @include reset;
+}
 
-  a {
-    text-decoration: none;
-    color: inherit
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 // ### LOGIN PAGE ###
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 
@@ -33,11 +35,9 @@ html, body, #root {
 .login__user {
   color: $prim-color;
   text-align: center;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   font-weight: 500;
 }
-
-
 
 // ### PROFILE PAGE ###
 
@@ -65,7 +65,7 @@ header {
   @include flex(v, sa, c);
   background-color: $sec-color;
   color: $ter-color;
-  height: calc(100vh - $header-height);  
+  height: calc(100vh - $header-height);
 }
 
 .activities-container {
@@ -75,20 +75,75 @@ header {
 
 .activity {
   background-color: #fff;
-  padding: .5rem;
-  border-radius: .25rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
   margin: 1rem;
 }
 
 main {
   width: 100%;
   margin: 3rem;
+  height: 100%;
 }
 
 h1 {
   font-size: 3rem;
   font-weight: 500;
   .firstName {
-    color: #FF0101;
+    color: #ff0101;
   }
+}
+
+.chartContainer {
+  @include flex(h, sb, c);
+  // background-color: aqua;
+  // border: 1px solid red;
+  height: 100%;
+  width: 100%;
+}
+
+.chart {
+  overflow: hidden;
+}
+
+.leftSide {
+  @include flex(v, sb, c);
+  // background-color: rosybrown;
+  // border: 2px solid green;
+  width: 100%;
+}
+.key-data {
+  @include flex(v, sb, s);
+  // border: 2px solid mediumseagreen;
+  height: 100%;
+  padding: 1rem;
+}
+.data-container {
+  margin: 1rem;
+  @include flex(h, sb, c);
+  gap: 1rem;
+  // border: 1px solid sienna;
+}
+.data-logo-container {
+  @include flex(h, sa, c);
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+}
+.data-text-container {
+  @include flex(v, sb, s);
+}
+.data-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.bottomSide {
+  @include flex(h, sb, c);
+  // background-color: darkgrey;
+  // border: 1px solid gold;
+  width: 100%;
+}
+.bottomChart {
+  width: 33%;
+  border: 1px solid tomato;
 }
