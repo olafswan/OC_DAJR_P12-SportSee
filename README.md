@@ -2,6 +2,44 @@
 
 # Développez un tableau de bord d'analytics avec React
 
+### Qu’allez-vous apprendre dans ce projet ?
+ 
+Dans ce projet, vous développerez un tableau de bord d'analytics de coaching sportif.
+Votre mission sera d'intégrer des graphiques et des diagrammes en utilisant React et de récupérer des données via une API.
+
+Votre tâche principale consistera à développer la page profil de l'utilisateur, en intégrant des éléments graphiques 
+avancés tels que des graphiques et des diagrammes pour présenter les données d'analyse sportive.
+
+Vous utiliserez **React** pour construire l'interface utilisateur. Pour les graphiques, vous pourrez faire appel à des 
+bibliothèques telles que Recharts ou D3.
+
+Vous serez en charge de la **gestion des appels HTTP**, utilisant des bibliothèques comme Fetch ou Axios pour interagir avec 
+le back-end et récupérer les données nécessaires.
+
+Une partie importante du projet sera de développer une documentation complète comprenant un Readme, JSDoc, et les 
+proptypes. Ceci est essentiel pour faciliter la collaboration et la compréhension du code au sein de l'équipe.
+
+Bien que le back-end soit géré en utilisant Node.js, votre concentration sera principalement sur le développement 
+front-end et l'intégration avec l'API.
+
+### En quoi ces compétences seront-elles importantes pour votre carrière ? 
+
+Le développement d'applications web modernes avec React et la capacité à intégrer des données complexes via des API 
+sont des compétences hautement recherchées dans l'industrie du développement web. 
+
+La maîtrise de bibliothèques graphiques avancées vous permettra de créer des visualisations de données interactives 
+et attrayantes. 
+
+De plus, la capacité à documenter efficacement votre code est essentielle pour le travail en équipe et la maintenance 
+à long terme des projets.
+
+### Objectifs pédagogiques
+* Assurer la qualité des données d'une application
+* Développer des éléments graphiques avancés à l'aide de bibliothèques JavaScript
+* Interagir avec un service Web
+
+***
+
 ### Scénario :
 
 Vous travaillez en tant que développeur chez SportSee, une startup dédiée au coaching sportif. En pleine croissance, 
@@ -72,8 +110,16 @@ Antoine
 
 Ça y est, vous avez toutes les informations nécessaires et vous pouvez démarrer le développement de la page.
 
+***
+
+### Livrables :
+1. Un fichier au format TXT contenant le lien vers votre **code** sur GitHub.
+
 ### Cours :
 [Adoptez les API REST pour vos projets web](https://openclassrooms.com/fr/courses/6573181-adoptez-les-api-rest-pour-vos-projets-web)
+
+### Ressources
+[Bien commenter son code JavaScript avec JSDoc](https://buzut.net/bien-commenter-son-code/)
 
 ### Résultat final lors du passage de la soutenance :
 [Lien du site](www.google.com)
